@@ -20,8 +20,8 @@ public class Principal extends AppCompatActivity {
 
         getWindow().getDecorView().setBackgroundColor(Color.parseColor(colorActual));
     }
-    public void onRadioButtonClicked(View view) { // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();// Check which radio button was clicked
+    public void onRadioButtonClicked(View view) { 
+        boolean checked = ((RadioButton) view).isChecked();
         SharedPreferences.Editor edtDatos = shPref.edit();
         switch(view.getId()) {
             case R.id.btn1:
